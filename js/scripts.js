@@ -7,3 +7,5 @@ let pokemonList=[
 ];
 
 for (let i = 0; i < pokemonList.length; i++) {
+  document.write ("Name: " + pokemonList[i].name + " \("+ "Height:" + pokemonList[i].height +"\)" +"<br>");
+}
