@@ -5,3 +5,5 @@ let pokemonList=[
   {name: "charmander", height: 6, types: ["fire","lizard"]}
 
 ];
+
+for (let i = 0; i < pokemonList.length; i++) {
