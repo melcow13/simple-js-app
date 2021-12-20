@@ -16,10 +16,12 @@ let pokemonList=[
 
 ];
 
-for (let i = 0; i < pokemonList.length; i++) {
-    document.write ("<br>" + pokemonList[i].name + " \("+ "Height:" + pokemonList[i].height +"\)");
-    if (pokemonList[i].height > 6)
-    {
-      document.write ('-it\'s big!');
-    }
-}
+
+pokemonList.forEach((pokemon) => {
+  document.write ("<br>" + pokemon.name + " \("+ "Height:" + pokemon.height +"\)");
+  if (pokemon.height > 6)
+  {
+    document.write ('-it\'s big!');
+  }
+
+});
