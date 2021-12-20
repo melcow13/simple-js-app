@@ -58,20 +58,12 @@ let pokemonRepository = (function () {
 
   return {
     add: add,
-    getAll: getAll
     getAll: getAll,
     addListItem: addListItem
   };
 })();
 
 
-
-pokemonRepository.getAll().forEach((pokemon) => {
-  document.write ("<br>" + pokemon.name + " \("+ "Height:" + pokemon.height +"\)");
-  if (pokemon.height > 6)
-  {
-    document.write ('-it\'s big!');
-  }
 pokemonRepository.getAll().forEach(function (pokemon) {
   pokemonRepository.addListItem(pokemon);
 });
