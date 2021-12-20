@@ -54,7 +54,7 @@ let pokemonRepository = (function () {
 
 
 
-pokemonRepository.getAll().forEach(pokemon) => {
+pokemonRepository.getAll().forEach((pokemon) => {
   document.write ("<br>" + pokemon.name + " \("+ "Height:" + pokemon.height +"\)");
   if (pokemon.height > 6)
   {
