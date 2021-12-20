@@ -38,17 +38,23 @@ let pokemonRepository = (function () {
       types: ["fire","lizard"]}
   ];
 
+  function add(pokemon) {
+    pokemonList.push(pokemon);
+  }
+
+  function getAll() {
+    return pokemonList;
+  }
+
   return {
-    add: function(pokemon) {
-      pokemonList.push(pokemon);
-    },
-    getAll: function() {
-      return pokemonList;
-    }
+    add: add,
+    getAll: getAll
   };
 })();
 
-pokemonList.forEach((pokemon) => {
+
+
+pokemonRepository.getAll().forEach(pokemon) => {
   document.write ("<br>" + pokemon.name + " \("+ "Height:" + pokemon.height +"\)");
   if (pokemon.height > 6)
   {
