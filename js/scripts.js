@@ -23,5 +23,4 @@ pokemonList.forEach((pokemon) => {
   {
     document.write ('-it\'s big!');
   }
-
 });
