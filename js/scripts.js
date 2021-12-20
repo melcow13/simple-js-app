@@ -72,4 +72,6 @@ pokemonRepository.getAll().forEach((pokemon) => {
   {
     document.write ('-it\'s big!');
   }
+pokemonRepository.getAll().forEach(function (pokemon) {
+  pokemonRepository.addListItem(pokemon);
 });
