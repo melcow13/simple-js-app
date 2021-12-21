@@ -56,12 +56,13 @@ let pokemonRepository = (function () {
     listpokemon.appendChild(button);
     pokemonList.appendChild(listpokemon);
     //Events
-    button.addEventlistener("click", function(){ pokemonRepository.showDetails(pokemon);
+    button.addEventListener("click", function(){pokemonRepository.showDetails
+      (pokemon);
     });
   };
 
   function showDetails(pokemon) {
-    console.log(pokemon.name);
+    console.log(pokemon.types);
   };
 
   return {
