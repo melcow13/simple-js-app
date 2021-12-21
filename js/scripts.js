@@ -1,20 +1,5 @@
 let pokemonRepository = (function () {
-  let pokemonList=[
-    {
-      name: "Bulbasuar",
-      height: 7,
-      types: ["grass", "poison"]
-    },
-    {
-      name: "Pikachu",
-      height: 4,
-      types:["electric","mouse"]
-    },
-    {
-      name: "Charmander",
-      height: 6,
-      types: ["fire","lizard"]}
-  ];
+  let pokemonList=[];
 
   function add(pokemon) {
     pokemonList.push(pokemon);
