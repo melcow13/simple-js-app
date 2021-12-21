@@ -57,8 +57,10 @@ let pokemonRepository = (function () {
 }
 
   function showDetails(pokemon) {
-    console.log(pokemon.types);
-  };
+  loadDetails(pokemon).then(function () {
+    console.log(pokemon);
+  });
+  }
 
   return {
     add: add,
