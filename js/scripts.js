@@ -58,9 +58,9 @@ let pokemonRepository = (function () {
   }
 
   function showDetails(pokemon) {
-  loadDetails(pokemon).then(function () {
-    console.log(pokemon);
-  });
+    pokemonRepository.loadDetails(pokemon).then(function () {
+      showModal(pokemon);
+    });
   }
 
   function showModal(title, text) {
@@ -99,6 +99,7 @@ let pokemonRepository = (function () {
   }
   });
   
+
   return {
     add: add,
     getAll: getAll,
