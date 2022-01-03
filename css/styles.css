@@ -12,10 +12,6 @@
   cursor: pointer;
 }
 
-.pokemon-list {
-  list-style-type: none;
-}
-
 
 #modal-container {
   display: none;
