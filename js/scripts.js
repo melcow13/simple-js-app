@@ -25,7 +25,7 @@ let pokemonRepository = (function () {
     //Events
     button.addEventListener("click", () => {
       pokemonRepository.showDetails(pokemon);
-      pokemonRepository.showModal();
+      pokemonRepository.showModal(pokemon);
     });
   };
 
