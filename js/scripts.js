@@ -67,40 +67,6 @@ let pokemonRepository = (function () {
 
   function showModal(pokemon) {
 
-  //event to close
-  let closeButtonElement = document.createElement('button');
-  closeButtonElement.classList.add('modal-close');
-  closeButtonElement.innerText = 'Close';
-  closeButtonElement.addEventListener('click', hideModal);
-// Add the new modal content
-  let titleElement = document.createElement('h1');
-  titleElement.innerText = 'Name:'+  pokemon.name;
-  let contentElement = document.createElement('p');
-  contentElement.innerText = 'Height:'+  pokemon.height;
-  let pokemonImage = document.createElement('img');
-  //add image
-  pokemonImage.src= pokemon.imageUrl;
-
-  modal.appendChild(closeButtonElement);
-  modal.appendChild(titleElement);
-  modal.appendChild(contentElement);
-  modal.appendChild(pokemonImage);
-  modalContainer.appendChild(modal);
-  modalContainer.classList.add('is-visible');
-
-};
-
-  function hideModal() {
-  let modalContainer = document.querySelector('#modal-container');
-  modalContainer.classList.remove('is-visible');
-  };
-
-  window.addEventListener('keydown', (e) => {
-  let modalContainer = document.querySelector('#modal-container');
-  if (e.key === 'Escape' && modalContainer.classList.contains('is-visible')) {
-    hideModal();
-  }
-  });
 
 
   return {
