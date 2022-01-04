@@ -66,6 +66,10 @@ let pokemonRepository = (function () {
   }
 
   function showModal(pokemon) {
+    $('#exampleModalLabel').text(pokemon.name);
+    $('#pokemonHeight').text("Height: "+ pokemon.height);
+    $('#pokedex').modal();
+    };
 
 
 
