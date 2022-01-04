@@ -11,3 +11,8 @@
   border-radius: 50px;
   cursor: pointer;
 }
+
+li.group-list-item {
+display: inline-block;
+margin: 5px;
+}
