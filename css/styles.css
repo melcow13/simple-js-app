@@ -40,6 +40,12 @@ ul.list-group {
   text-transform: capitalize;
 }
 
-.modal-dialog {
+.modal-body {
   text-align: center;
+}
+
+.modal-header {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
 }
