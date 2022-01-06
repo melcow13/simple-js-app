@@ -84,7 +84,10 @@ let pokemonRepository = (function () {
     modalBody.append(imageElement);
     modalBody.append(weightElement);
     modalBody.append(heightElement);
-    modalBody.append(typesElement);
+    modalBody.append($("<h5>Type:</h5>"));
+    pokemon.types?.forEach(type=>{
+    modalBody.append($("<p>" + type?.type?.name + "</p>"));
+    })
 
     $('#pokedex').modal();
 
