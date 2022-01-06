@@ -15,4 +15,31 @@
 li.group-list-item {
 display: inline-block;
 margin: 5px;
+flex-basis: 10%;
+width: 25%;
+}
+
+ul.list-group {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  list-style: none;
+  padding: 0;
+  text-align: center;
+  align-items: center;
+}
+
+.btn {
+  display: inline-block;
+  text-transform: capitalize;
+  text-align: center;
+  width: 250px;
+}
+
+.modal-title {
+  text-transform: capitalize;
+}
+
+.modal-dialog {
+  text-align: center;
 }
